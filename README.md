@@ -13,7 +13,7 @@ These are the transformed animated variants of the real images.
 
 ![Generated Images](test_output/gen_overall_result.png)
 
-Training the GAN architecture:
+## Training:
 
 The following command needs to be run in the terminal:
 
@@ -23,13 +23,20 @@ Download VGG-19 weights: https://download.pytorch.org/models/vgg19-dcbb9e9d.pth
 
 python CartoonGAN.py --name your_project_name --src_data src_data_path --tgt_data tgt_data_path --vgg_model pre_trained_VGG19_model_path
 
+## Testing:
+
+The testing of the GAN network can be run from the trained model after 100 epochs.
+
+python test.py --input_dir images --style Danbooru --gpu 0
+
+## Hierarchy
 
 The Input Data needs to be saved in this hierarchy.
 
 ├── data \
 │   ├── src_data # src data (not included in this repo) \
-│   │   |── train\ 
-│   │   └── test  \
+│   |    ├── train \
+│   |    └── test \
 │   └── tgt_data # tgt data (not included in this repo)\
 │       ├── train \
 │       └── pair # edge-promoting results to be saved here \
@@ -41,11 +48,6 @@ The Input Data needs to be saved in this hierarchy.
 └── name_results # results to be saved here
 
 
-Testing the GAN architecture:
-
-The testing of the GAN network can be run from the trained model after 100 epochs.
-
-python test.py --input_dir images --style Danbooru --gpu 0
-
-
-Libraries required: PyTorch & OpenCV
+## Requirements
+PyTorch
+OpenCV
