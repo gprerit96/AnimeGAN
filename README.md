@@ -19,18 +19,18 @@ python CartoonGAN.py --name your_project_name --src_data src_data_path --tgt_dat
 
 The Input Data needs to be saved in this hierarchy.
 
-├── data
-│   ├── src_data # src data (not included in this repo)
-│   │   ├── train 
-│   │   └── test
-│   └── tgt_data # tgt data (not included in this repo)
-│       ├── train 
-│       └── pair # edge-promoting results to be saved here
-│
-├── CartoonGAN.py # training code
-├── edge_promoting.py
-├── utils.py
-├── networks.py
+├── data \
+│   ├── src_data # src data (not included in this repo) \
+│   │   ├── train \ 
+│   │   └── test  \
+│   └── tgt_data # tgt data (not included in this repo)\
+│       ├── train \
+│       └── pair # edge-promoting results to be saved here \
+│\
+├── CartoonGAN.py # training code\
+├── edge_promoting.py\
+├── utils.py\
+├── networks.py\
 └── name_results # results to be saved here
 
 Testing the GAN architecture:
