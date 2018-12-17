@@ -28,7 +28,7 @@ The Input Data needs to be saved in this hierarchy.
 
 ├── data \
 │   ├── src_data # src data (not included in this repo) \
-│   │   ├── train \ 
+│   │   |── train\ 
 │   │   └── test  \
 │   └── tgt_data # tgt data (not included in this repo)\
 │       ├── train \
