@@ -33,6 +33,12 @@ The Input Data needs to be saved in this hierarchy.
 ├── networks.py\
 └── name_results # results to be saved here
 
+## Results
+
+![Real Images](real_images/real_overall_result.png)
+
+![Generated Images](test_output/gen_overall_result.png)
+
 Testing the GAN architecture:
 
 The testing of the GAN network can be run from the trained model after 100 epochs.
